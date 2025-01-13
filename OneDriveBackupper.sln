@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneDriveBackupper", "OneDriveBackupper\OneDriveBackupper.csproj", "{BF3DDF86-9865-4574-835E-D5CF22053234}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF3DDF86-9865-4574-835E-D5CF22053234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3DDF86-9865-4574-835E-D5CF22053234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3DDF86-9865-4574-835E-D5CF22053234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3DDF86-9865-4574-835E-D5CF22053234}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
