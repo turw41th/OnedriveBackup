@@ -1,0 +1,19 @@
+{
+  "OneDriveCredentials": {
+    "ClientId": "your-client-id",
+    "TenantId": "your-tenant-id",
+    "ClientSecret": "your-client-secret"
+  },
+  "BackupSettings": {
+    "TargetFolderOnOneDrive": "backups",
+    "LocalFoldersToBackup": [
+      "/home/user/documents",
+      "/home/user/photos"
+    ],
+    "Schedule": {
+      "Frequency": "Weekly",
+      "DayOfWeek": "Sunday",
+      "Time": "03:00"
+    }
+  }
+}

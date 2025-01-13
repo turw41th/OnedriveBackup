@@ -19,11 +19,25 @@ namespace OneDriveBackupper
 			OsPlatform = osPlatform;
 		}
 
-		public static void Initialize(OSPlatform osPlatform)
+		public static void Initialize()
 		{
 			if (instance != null)
 			{
 				throw new InvalidOperationException("PlatformHandler is already initialized.");
+			}
+
+			OSPlatform osPlatform;
+			if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+			{
+				osPlatform = OSPlatform.Windows;
+			}
+			else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+			{
+				osPlatform = OSPlatform.Linux;
+			}
+			else
+			{
+				throw new NotSupportedException("Platform is not supported.");
 			}
 
 			instance = new Lazy<PlatformHandler>(() => new PlatformHandler(osPlatform));
